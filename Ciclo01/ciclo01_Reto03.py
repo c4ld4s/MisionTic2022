@@ -5,10 +5,10 @@ Pekkemons:str
 def juegoPekkemon (LetrasCarlos:str, LetrasValeria:str, Pekkemons:str):
     longitudCarlos = (int(len(Pekkemons)/len(LetrasCarlos))*LetrasCarlos)+LetrasCarlos[0:2]
     longitudValeria = (int(len(Pekkemons)/len(LetrasValeria))*LetrasValeria)+LetrasValeria[0:2]
-    list(longitudCarlos)
-    list(longitudValeria)
+    print(list(longitudCarlos))
+    print(list(longitudValeria))
     pekkedex = list(Pekkemons)
-    list(pekkedex)
+    print(pekkedex)        
     for i in pekkedex:
         if longitudCarlos == pekkedex and longitudValeria == pekkedex:
             puntosCarlos = puntosCarlos+1
