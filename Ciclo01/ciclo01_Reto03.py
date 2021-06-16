@@ -9,18 +9,29 @@ def juegoPekkemon (LetrasCarlos:str, LetrasValeria:str, Pekkemons:str):
     print(list(longitudValeria))
     pekkedex = list(Pekkemons)
     print(pekkedex)        
-    for i in pekkedex:
+    for i in range(0,len(pekkedex)):
+        puntosCarlos = 0
+        puntosValeria = 0
+        lista = []
         if longitudCarlos == pekkedex and longitudValeria == pekkedex:
             puntosCarlos = puntosCarlos+1
             puntosValeria = puntosValeria+1
             print('P')
-        if longitudCarlos== pekkedex and longitudValeria != pekkedex:
+            i = i+1
+            return lista.append(['P'])
+        if longitudCarlos== pekkedex and longitudValeria!= pekkedex:
             puntosCarlos = puntosCarlos+1
+            i = i+1
             print('C')
+            return lista.append(['C'])
         if longitudCarlos != pekkedex and longitudValeria == pekkedex:
             puntosValeria = puntosValeria+1
             print('V')
+            i = i+1
+            return lista.append(['V'])
         if longitudCarlos != pekkedex and longitudValeria != pekkedex:
             print('N')
+            i = i+1
+            return lista.append(['N'])
 
 print(juegoPekkemon('AYS','LQK','YSGLZQUQSKRQSBVLVJGQ'))
