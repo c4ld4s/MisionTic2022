@@ -25,23 +25,23 @@ empleados = [
         }
     },
     {
-        'nombre' : "Juan David",
-        'tipoContrato' : 'TERMINOFIJO',
-        'cargo' : 3,
+        'nombre' : "Carlos Perez",
+        'tipoContrato' : 'APRENDIZAJE',
+        'cargo' : 1,
         'sindicatos' : {
             'sindicato0' : False,
-            'sindicato1' : True,
+            'sindicato1' : False,
             'sindicato2' : False
         }
     },
-        {
-        'nombre' : "Juan David",
-        'tipoContrato' : 'TERMINOFIJO',
+    {
+        'nombre' : "Pedro Lopez",
+        'tipoContrato' : 'TERMINOINDEFINIDO',
         'cargo' : 3,
         'sindicatos' : {
             'sindicato0' : False,
             'sindicato1' : True,
-            'sindicato2' : False
+            'sindicato2' : True
         }
     }
 ]

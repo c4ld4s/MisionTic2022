@@ -23,5 +23,4 @@ def juegoPekkemon (LetrasCarlos:str, LetrasValeria:str, Pekkemons:str):
         if longitudCarlos != pekkedex and longitudValeria != pekkedex:
             print('N')
 
-
 print(juegoPekkemon('AYS','LQK','YSGLZQUQSKRQSBVLVJGQ'))
