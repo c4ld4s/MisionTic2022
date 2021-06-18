@@ -1,3 +1,5 @@
+#OBJETIVO = Definir el pago mensual que debe recibir un trabajador de acuerdo con el tipo de contratación, su salario base y los descuentos por concepto de retención en la fuente, salud, pensión, arl y sindicato
+
 nombre, tipoContrato, cargo, empleados  = str, str, int, []
 
 Valores_sindicatos = {

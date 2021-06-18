@@ -1,4 +1,4 @@
-#OBJETIVO= Definir una función que consiste en quien adivina la primera letra del nombre de los pekkémons que vienen en el camino.
+#OBJETIVO = Definir una función que consiste en quien adivina la primera letra del nombre de los pekkémons que vienen en el camino.
 
 LetrasCarlos:str
 LetrasValeria:str

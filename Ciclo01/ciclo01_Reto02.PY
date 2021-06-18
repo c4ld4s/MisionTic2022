@@ -1,4 +1,4 @@
-#OBJETIVO=Elaborar un programa que implemente una función para calcular el salario mensual que la empresa debe pagar a un empleado. 
+#OBJETIVO = Elaborar un programa que implemente una función para calcular el salario mensual que la empresa debe pagar a un empleado. 
 
 nombre, tipoContrato, cargo  = str, str, int
 

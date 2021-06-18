@@ -1,3 +1,5 @@
+#OBJETIVO = Generar un cuadro para conocer los totales de ventas, gastos y perdida por defecto de cada mes.
+
 import pandas as pd
 ruta_archivo = str 
 def Tienda(ruta_archivo ):

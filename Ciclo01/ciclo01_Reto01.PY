@@ -1,4 +1,4 @@
-#OBJETIVO= Función que reciba como parametros: dos números enteros (adultos, niños) que represente la cantidad de adultos y niños que tiene la familia y retorne una cadena de caracteres que le indique al cajero la información que desea obtener.
+#OBJETIVO = Función que reciba como parametros: dos números enteros (adultos, niños) que represente la cantidad de adultos y niños que tiene la familia y retorne una cadena de caracteres que le indique al cajero la información que desea obtener.
 
 def totalPagosParque(adultos , niños):
     costoEntradaAdulto = 15000
