@@ -1,37 +1,68 @@
-nombre, tipoContrato, cargo  = str, str, int
-#este es el diccionario que se usa para sacar los valores de la cuota del sindicato
+nombre, tipoContrato, cargo, empleados  = str, str, int, []
+
 Valores_sindicatos = {
     'sindicato0': 0,
     'sindicato1': 13550,
     'sindicato2': 18700,
 }
 
-#“””ValoresSindicales funcion que me devuelve la o las cuotas del sindicato que debo pagar, esta funcion se llamara dentro de la funcion calcularSalario y retornara una lista con los valores de las cuotas sindicales a pagar””” 
 def ValoresSindicales (llave, valor, datos=Valores_sindicatos):
-    if # si el valor del sindicato es true
-         #retorneme datos[llave]
+    if valor == True:
+        return datos[llave]
+    else :
+        return 0
     return
-    #retorna 0
-    pass
 
-#“””Calcular salario
 def calcularSalario (empleados):
-    saldoBase = 908526
-    #definir ciclo para recorrer los empleados
-    for 
-        #definir variables
-        #sacar del diccionario el nombre, tipo de contrato y el cargo
-        list(map(ValoresSindicales,diccionario['sindicatos'].keys(),diccionario['sindicatos'].values()))
-        #retorna [0,13500,0]
-        sum(lista)
-        #preguntar por el cargo 
+    salarioLegal = 908526
+    for empleado in empleados:
+        arl = 0
+        fsp = 0
+        pension = 0
+        reteFuente = 0
+        salarioBase = 0
+        salarioTotal = 0
+        salud = 0
+        nombre = empleado['nombre']
+        tipoContrato = empleado['tipoContrato']
+        cargo = empleado['cargo']
+        valoresCuotas = list(map(ValoresSindicales,empleado['sindicatos'].keys(),empleado['sindicatos'].values()))
+        cuotaSindical = sum(valoresCuotas)
+        if cargo == 1 :
+            salarioBase = salarioLegal * 2
+        elif cargo == 2 :
+            salarioBase = salarioLegal * 3
+        elif cargo == 3 :
+            salarioBase = salarioLegal * 4
+        elif cargo == 4 :
+            salarioBase = salarioLegal * 5
+            fsp = salarioBase * 0.01
         else :
-        print("dato ingresado no valido")
-
-
-        #calculo salario base
-        #print
-    pass
+            print("Dato ingresado no valido")
+        if tipoContrato == 'PRESTACIONSERVICIOS':
+            reteFuente = salarioBase * 0.06
+            salud = salarioBase * 0.02
+            pension = salarioBase * 0.06
+            arl = 0
+        elif tipoContrato == 'TERMINOFIJO':
+            reteFuente = salarioBase * 0.10
+            salud = salarioBase * 0.08
+            pension = salarioBase * 0.02
+            arl = salarioBase * 0.04
+        elif tipoContrato == 'TERMINOINDEFINIDO':
+            reteFuente = salarioBase * 0.05
+            salud = salarioBase * 0.04
+            pension = salarioBase * 0.04
+            arl = salarioBase * 0.04
+        elif tipoContrato == 'APRENDIZAJE':
+            reteFuente = 0
+            salud = 0
+            pension = 0
+            arl = salarioBase * 0.04
+        else : 
+            print('Dato ingresado no valido')
+        salarioTotal = round(salarioBase - (arl + cuotaSindical+ fsp + pension + reteFuente + salud),1)
+        print(f"El empleado {nombre} con tipo de contratación {tipoContrato} y cargo {cargo} tiene un salario base de {salarioBase} y los descuentos son: Retefuente {reteFuente}, Salud {salud}, Pension {pension}, ARL {arl}, FSP {fsp} y valor cuota sindical de {cuotaSindical}, para un salario total de {salarioTotal}")
 
 empleados = [
     {
@@ -57,7 +88,7 @@ empleados = [
     {
         'nombre' : "Pedro Lopez",
         'tipoContrato' : 'TERMINOINDEFINIDO',
-        'cargo' : 3,
+        'cargo' : 4,
         'sindicatos' : {
             'sindicato0' : False,
             'sindicato1' : True,
