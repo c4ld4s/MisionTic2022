@@ -1,5 +1,5 @@
 /**
-* Universidad Tecnológica de Pereira <br>
+* Universidad Tecnológica de Pereira
 * (Pereira, Risaralda - Colombia)
 * */
 package utp.misiontic2022.c2.mundo ;
