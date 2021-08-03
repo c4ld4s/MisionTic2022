@@ -3,6 +3,8 @@
 * (Pereira, Risaralda - Colombia)
 * */
 package utp.misiontic2022.c2.mundo ;
+
+
 /** 
 * Clase que representa un Proyecto.
 */
@@ -26,25 +28,30 @@ public class Sistema_De_inversion {
     }
     public Double interesSimple()
     {   
-        Double calculoInteresSimple = (double) Math.round(this.capital*(this.interes/100)*this.tiempo);
-        return (calculoInteresSimple);
+        Double a = (double) Math.round(this.capital*(this.interes/100)*this.tiempo);
+        return (a);
     }
     public Double interesCompuesto()
     {
-        Double CalculoInteresCompuesto = (double) (Math.round(this.capital*(Math.pow(1+(this.interes/100), this.tiempo)-1)));
-        return(CalculoInteresCompuesto);
+        Double b = (double) this.capital*(Math.pow(1+(this.interes/100), this.tiempo)-1);
+        return(b);
     }
-    public String compararInversion(Double interesCompuesto, Double interesSimple)
+    public void compararInversion(Double b, Double a)
     {   
-        String diferencia ="";
-        if (interesSimple == 0 || interesCompuesto == 0)
+        if ((a != 0) && (b != 0))
         {
-            diferencia = "Faltan datos para calcular la diferencia en el total de intereses generados para el proyecto";
+            System.out.println("El interés simple es: " + a +", el interés compuesto es: " + b + ", La diferencia en el total de intereses generados para el proyecto, si escogemos entre evaluarlo a una tasa de interés Compuesto y evaluarlo a una tasa de interés Simple, asciende a la cifra de: " + (b-a));
         }
         else
         {
-            diferencia = "El interés simple es: " + this.interesSimple() +", el interés compuesto es:" + this.interesCompuesto() + ", La diferencia en el total de intereses generados para el proyecto, si escogemos entre evaluarlo a una tasa de interés Compuesto y evaluarlo a una tasa de interés Simple, asciende a la cifra de: " + (this.interesCompuesto() - this.interesSimple()) + ".";
+            System.out.println("Faltan datos para calcular la diferencia en el total de intereses generados para el proyecto");
         }
-        return (diferencia);
+    }
+
+    public static void main(String[] args){
+        Sistema_De_inversion a = new Sistema_De_inversion(36,350000.0,1.18);
+        Double b = a.interesSimple();
+        Double c = a.interesCompuesto();
+        a.compararInversion(c, b);
     }
 }
