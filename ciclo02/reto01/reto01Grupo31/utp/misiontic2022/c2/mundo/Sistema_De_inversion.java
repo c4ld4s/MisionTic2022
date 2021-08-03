@@ -26,13 +26,13 @@ public class Sistema_De_inversion {
     }
     public Double interesSimple()
     {   
-        Double interesSimple = (double) Math.round(this.capital*(this.interes/100)*this.tiempo);
-        return (interesSimple);
+        Double calculoInteresSimple = (double) Math.round(this.capital*(this.interes/100)*this.tiempo);
+        return (calculoInteresSimple);
     }
     public Double interesCompuesto()
     {
-        Double interesCompuesto = (double) (Math.round(this.capital*(Math.pow(1+(this.interes/100), this.tiempo)-1)));
-        return(interesCompuesto);
+        Double CalculoInteresCompuesto = (double) (Math.round(this.capital*(Math.pow(1+(this.interes/100), this.tiempo)-1)));
+        return(CalculoInteresCompuesto);
     }
     public String compararInversion(Double interesCompuesto, Double interesSimple)
     {   
