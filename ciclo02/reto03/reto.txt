@@ -1,0 +1,28 @@
+consulta 1:
+select *
+from Proyecto 
+where Fecha_Inicio >= "2021-01-01" limit 40 ;
+
+consulta 2:
+select ID_proyecto, Ciudad, Banco_Vinculado, Constructora
+from proyecto
+where Ciudad = "Bogota" ;
+
+consulta 3:
+select Nombre , Primer_Apellido,Ciudad_Residencia ,Cargo , Salario "Ingreso por empleado"
+from Lider
+where (Cargo = "Asesor" OR Cargo = "Coordinador")
+AND Salario <= 310000 ;
+
+consulta 4:
+select Cantidad, Proveedor 
+from Compra
+group by Proveedor;
+
+consulta 5:
+select c.Proveedor, c.Pagado ,  p.Constructora
+from compra c
+inner join Proyecto p
+on c.ID_proyecto  = p.ID_proyecto
+where c.Pagado = "No"
+and c.Proveedor = "JUMBO" ;
