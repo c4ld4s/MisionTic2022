@@ -21,7 +21,7 @@ public class Requerimiento_2Dao {
         Connection conexion = JDBCUtilities.getConnection();
         try{
 
-            String consulta =   "select Nombre , Primer_Apellido, Ciudad_Residencia ,Cargo , Salario 'Ingreso por empleado' " +
+            String consulta =   "select Nombre , Primer_Apellido, Ciudad_Residencia ,Cargo , Salario " +
                                 "from Lider " +
                                 "where (Cargo = 'Asesor' OR Cargo = 'Coordinado')" +
                                 "AND Salario <= 310000 ;  ";

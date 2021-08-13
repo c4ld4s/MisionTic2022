@@ -34,10 +34,9 @@ public class Requerimiento_3Dao {
             while(resultSet.next()){
                 Requerimiento_3 requerimiento_3 = new Requerimiento_3();
                 requerimiento_3.setProveedor(resultSet.getString("Proveedor"));
-                requerimiento_3.setPrimer_Apellido(resultSet.getString("Primer_Apellido"));
-                requerimiento_2.setCiudad_Residencia(resultSet.getString("Ciudad_Residencia"));
-                requerimiento_2.setCargo(resultSet.getString("Cargo"));
-                requerimiento_2.setSalario(resultSet.getString("Salario"));
+                requerimiento_3.setPagado(resultSet.getString("Pagado"));
+                requerimiento_3.setConstructora(resultSet.getString("Constructora"));
+
 
 
                 respuesta.add(requerimiento_3);
