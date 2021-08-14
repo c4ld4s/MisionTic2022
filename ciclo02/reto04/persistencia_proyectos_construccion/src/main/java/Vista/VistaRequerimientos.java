@@ -34,7 +34,7 @@ public class VistaRequerimientos {
         try {
             ArrayList<Requerimiento_2> lista2 = controlador.consultarRequerimiento2();
             for (Requerimiento_2 reque : lista2){
-                System.out.printf("%s %s %s %s %s %n",
+                System.out.printf("%s %s %s %s %d %n",
                     reque.getNombre(),
                     reque.getPrimer_Apellido(),
                     reque.getCiudad_Residencia(),

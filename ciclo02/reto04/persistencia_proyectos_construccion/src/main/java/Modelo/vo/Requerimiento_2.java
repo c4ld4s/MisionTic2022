@@ -6,19 +6,13 @@ public class Requerimiento_2 {
     private String  Primer_Apellido;
     private String  Ciudad_Residencia;
     private String  Cargo;
-    private String  Salario;
+    private Integer Salario;
 
     
     public Requerimiento_2() {
     }
 
 
-    public Requerimiento_2(String cargo, String salario) {
-        Cargo = cargo;
-        Salario = salario;
-    }
-
-    
     public String getNombre() {
         return Nombre;
     }
@@ -43,13 +37,10 @@ public class Requerimiento_2 {
     public void setCargo(String cargo) {
         Cargo = cargo;
     }
-    public String getSalario() {
+    public int getSalario() {
         return Salario;
     }
-    public void setSalario(String salario) {
+    public void setSalario(Integer salario) {
         Salario = salario;
     }
-
-    
-
 }

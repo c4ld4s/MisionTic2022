@@ -37,8 +37,6 @@ public class Requerimiento_3Dao {
                 requerimiento_3.setPagado(resultSet.getString("Pagado"));
                 requerimiento_3.setConstructora(resultSet.getString("Constructora"));
 
-
-
                 respuesta.add(requerimiento_3);
             }
             resultSet.close();

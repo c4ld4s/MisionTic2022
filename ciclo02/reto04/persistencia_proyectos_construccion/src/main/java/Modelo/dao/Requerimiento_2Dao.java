@@ -35,7 +35,7 @@ public class Requerimiento_2Dao {
                 requerimiento_2.setPrimer_Apellido(resultSet.getString("Primer_Apellido"));
                 requerimiento_2.setCiudad_Residencia(resultSet.getString("Ciudad_Residencia"));
                 requerimiento_2.setCargo(resultSet.getString("Cargo"));
-                requerimiento_2.setSalario(resultSet.getString("Salario"));
+                requerimiento_2.setSalario(resultSet.getInt("Salario"));
 
 
                 respuesta.add(requerimiento_2);

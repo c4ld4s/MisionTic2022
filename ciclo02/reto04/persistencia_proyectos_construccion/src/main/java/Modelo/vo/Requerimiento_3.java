@@ -36,5 +36,4 @@ public class Requerimiento_3 {
     public void setConstructora(String constructora) {
         Constructora = constructora;
     }
-    
 }
