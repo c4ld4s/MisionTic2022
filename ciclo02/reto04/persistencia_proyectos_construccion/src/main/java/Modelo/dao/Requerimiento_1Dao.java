@@ -26,7 +26,7 @@ public class Requerimiento_1Dao {
 
             String consulta =   "select ID_Proyecto, Ciudad, Banco_Vinculado, Constructora " +
                                 "from Proyecto " +
-                                "where Ciudad = 'Bogotá'; ";
+                                "where Ciudad = 'Bogota'; ";
                                 
             PreparedStatement statement = conexion.prepareStatement(consulta);
             ResultSet resultSet = statement.executeQuery();

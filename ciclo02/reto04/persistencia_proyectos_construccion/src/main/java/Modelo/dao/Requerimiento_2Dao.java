@@ -23,7 +23,7 @@ public class Requerimiento_2Dao {
 
             String consulta =   "select Nombre , Primer_Apellido, Ciudad_Residencia ,Cargo , Salario " +
                                 "from Lider " +
-                                "where (Cargo = 'Asesor' OR Cargo = 'Coordinado')" +
+                                "where (Cargo = 'Asesor' OR Cargo = 'Coordinador')" +
                                 "AND Salario <= 310000 ;  ";
 
             PreparedStatement statement = conexion.prepareStatement(consulta);

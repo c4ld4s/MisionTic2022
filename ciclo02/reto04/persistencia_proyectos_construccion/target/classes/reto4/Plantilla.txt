@@ -26,9 +26,6 @@ class JDBCUtilities {
 // Remplace en adelante por las clases de sus archivos .java
 
 // Vista
-class VistaRequerimientos {}
-
-
 
 public class VistaRequerimientos {
 
@@ -87,8 +84,6 @@ public class VistaRequerimientos {
 }
 
 // Controlador
-class ControladorRequerimientos {}
-
 
 public class ElControladorDeRequerimientos {
     
@@ -119,7 +114,6 @@ public class ElControladorDeRequerimientos {
 
 // Modelo
 // VO
-class Requerimiento_1 {}
 
 //consulta 1
 public class Requerimiento_1 {
@@ -164,9 +158,6 @@ public class Requerimiento_1 {
 }
 
 
-class Requerimiento_2 {}
-
-//consulta 3
 public class Requerimiento_2 {
 
     private String  Nombre;
@@ -212,9 +203,7 @@ public class Requerimiento_2 {
     }
 }
 
-class Requerimiento_3 {}
 
-// consulta 5
 public class Requerimiento_3 {
 
     private String Proveedor;
@@ -254,7 +243,6 @@ public class Requerimiento_3 {
 }
 
 // DAO
-class Requerimiento_1Dao {}
 
 public class Requerimiento_1Dao {   
 
@@ -266,7 +254,7 @@ public class Requerimiento_1Dao {
 
             String consulta =   "select ID_Proyecto, Ciudad, Banco_Vinculado, Constructora " +
                                 "from Proyecto " +
-                                "where Ciudad = 'Bogotá'; ";
+                                "where Ciudad = 'Bogota'; ";
             PreparedStatement statement = conexion.prepareStatement(consulta);
             ResultSet resultSet = statement.executeQuery();
 
@@ -291,7 +279,7 @@ public class Requerimiento_1Dao {
         return respuesta;
     }
 }
-class Requerimiento_2Dao {}
+
 
 public class Requerimiento_2Dao {
     //Obtener los 10 proyectos rankeados según las compras
@@ -302,7 +290,7 @@ public class Requerimiento_2Dao {
 
             String consulta =   "select Nombre , Primer_Apellido, Ciudad_Residencia ,Cargo , Salario " +
                                 "from Lider " +
-                                "where (Cargo = 'Asesor' OR Cargo = 'Coordinado')" +
+                                "where (Cargo = 'Asesor' OR Cargo = 'Coordinador')" +
                                 "AND Salario <= 310000 ;  ";
 
             PreparedStatement statement = conexion.prepareStatement(consulta);
@@ -331,9 +319,6 @@ public class Requerimiento_2Dao {
         return respuesta;
     }
 }
-
-class Requerimiento_3Dao {}
-
 
 public class Requerimiento_3Dao {
     //Obtener los 10 proyectos rankeados según las compras
