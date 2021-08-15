@@ -10,7 +10,7 @@ public class Requerimiento_1 {
     
     public Requerimiento_1() {
     }  
-
+    
 
     public Requerimiento_1(Integer iD_Proyecto, String ciudad) {
         ID_Proyecto = iD_Proyecto;

@@ -17,7 +17,6 @@ import Modelo.vo.Requerimiento_1;
 public class Requerimiento1 extends JFrame{
     public Requerimiento1() throws SQLException {
         initUI();
-
     }
     private void initUI() throws SQLException {
         setLayout(new BorderLayout());
@@ -44,8 +43,8 @@ public class Requerimiento1 extends JFrame{
             matris[i][1]=lista.get(i).getCiudad();
             matris[i][2]=lista.get(i).getBanco_Vinculado();
             matris[i][3]=lista.get(i).getConstructora();
+
         }
         return matris;
     }
-
 }

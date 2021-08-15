@@ -11,7 +11,7 @@ public class Requerimiento_2 {
     
     public Requerimiento_2() {
     }
-
+    
 
     public String getNombre() {
         return Nombre;
