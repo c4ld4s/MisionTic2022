@@ -20,13 +20,13 @@ public class PrecioTotal {
             if(listaBalones[i] instanceof BalonFutbol){
                 totalFutbol+=listaBalones[i].precioFinal();
             }
-            //if(listaBalones[i] instanceof BalonVoleibol){
-            //    totalVoleibol+=listaBalones[i].precioFinal();
-            //}
+            if(listaBalones[i] instanceof BalonVoleibol){
+                totalVoleibol+=listaBalones[i].precioFinal();
+            }
             }
             System.out.println("La suma del precio de los balones es de "+totalBalon);
             System.out.println("La suma del precio de los balones de futbol es de "+totalFutbol);
-            //System.out.println("La suma del precio de los balones de voleibol es de "+totalVoleibol);
+            System.out.println("La suma del precio de los balones de voleibol es de "+totalVoleibol);
         }
 
 }

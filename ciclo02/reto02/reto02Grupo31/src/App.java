@@ -1,17 +1,14 @@
 public class App {
     public static void main(String[] args){
-        balon[] item1 = new balon[2];
 
-        item1[0] = new balon(1500.0,8,"rojo");
-        item1[1] = new BalonFutbol();
+        balon intem[]=new balon[5];
+        intem[0]=new balon();
+        intem[1]=new BalonFutbol();
+        intem[2]=new BalonVoleibol();
+        intem[3]=new balon();
+        intem[4]=new BalonFutbol();
         
-        PrecioTotal suma = new PrecioTotal(item1);
-        suma.mostrarTotales();
-        //balon item = new balon(1500.0,8,"rojo");
-
-        //System.out.println(item.precioFinal());
-
-        //BalonFutbol futbol = new BalonFutbol();
-        //System.out.println(futbol.precioFinal());
+        PrecioTotal analisis1 = new PrecioTotal(intem);
+        analisis1.mostrarTotales();
     }
 }
