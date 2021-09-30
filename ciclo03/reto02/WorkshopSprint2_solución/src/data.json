@@ -1,0 +1,19 @@
+{
+    "servicios": [
+        {
+            "titulo": "Servicio 1",
+            "descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa facere sapiente excepturi accusantium delectus mollitia repellendus placeat, voluptatum deserunt harum temporibus, inventore vitae et soluta deleniti pariatur praesentium eveniet.",
+            "imagen": "./img/8.jpg"
+        },
+        {
+            "titulo": "Servicio 2",
+            "descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa facere sapiente excepturi accusantium delectus mollitia repellendus placeat, voluptatum deserunt harum temporibus, inventore vitae et soluta deleniti pariatur praesentium eveniet.",
+            "imagen": "./img/6.jpg"
+        },
+        {
+            "titulo": "Servicio 3",
+            "descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa facere sapiente excepturi accusantium delectus mollitia repellendus placeat, voluptatum deserunt harum temporibus, inventore vitae et soluta deleniti pariatur praesentium eveniet.",
+            "imagen": "./img/7.jpg"
+        }
+    ]
+}
